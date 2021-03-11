@@ -1,0 +1,41 @@
+.restaurants-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.restaurants-list li {
+  flex: 0 1 29rem;
+  height: 47rem;
+  padding: 1rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color:rgb(219, 219, 219);
+}
+.restaurant {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80%;
+}
+.restaurant img {
+  max-width: 35rem;
+  max-height: 35rem;
+}
+.restaurant-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+.restaurant-wrapper div,
+.restaurant-wrapper button {
+  text-align: center;
+  flex: 1;
+}
+.restaurant-wrapper div {
+  font-size: 2rem;
+}

@@ -1,0 +1,28 @@
+.sidebar {
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+}
+.sidebar-header {
+  border-bottom: 0.1rem #c0c0c0 solid;
+}
+.sidebar-items {
+  padding: 0;
+  width: 100%;
+  list-style-type: none;
+}
+.sidebar-items img {
+  width: 5rem;
+}
+.sidebar-items li {
+  display: flex;
+}
+.sidebar-items li div {
+  padding: 0.5rem;
+}
+.sidebar-items li div:last-child {
+  flex: 1;
+}
+.right {
+  text-align: right;
+}

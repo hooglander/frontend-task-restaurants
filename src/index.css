@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+html {
+  font-size: 60%;
+  box-sizing: border-box;
+}
+body,
+#root {
+  height: 100vh;
+  margin: 0;
+}
+body,
+input,
+select,
+button,
+textarea {
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-rows: 5rem 1fr 5rem;
+  grid-template-columns: 1fr;
+  height: 100%;
+}
+header {
+  grid-area: header;
+  background-color: #00162c;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+.header-logo {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+main {
+  grid-area: main;
+  height: 100%;
+  overflow: hidden;
+}
+footer {
+  grid-area: footer;
+  background-color: #00162c;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main {
+  flex: 3 60rem;
+  height: 100vh;
+  width: 100vh;
+  overflow: auto;
+}
+.sidebar {
+  flex: 1 20rem;
+  float: right;
+  overflow: auto;
+}
+.button {
+  padding: 1rem;
+  border: 0.1rem #c0c0c0 solid;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+.button:hover {
+  border: 0.2rem #808080 solid;
+}
+.button.primary {
+  background-color: #f0c040;
+}
+.search-results {
+  margin-bottom: 200px;
+}
